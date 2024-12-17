@@ -2,7 +2,7 @@
 import { onMounted, ref } from "vue";
 import { initializeVirtualKeyboard } from "../initialize-virtual-keyboard";
 import { InputMath } from "../components";
-import { InputMathFieldEmit } from "../components/InputMath";
+import { InputMathFieldEmit } from "../components/";
 import { ComputeEngine } from "@cortex-js/compute-engine";
 
 const computeEngine = new ComputeEngine();
@@ -23,7 +23,7 @@ const handleOnInputChange = (input: InputMathFieldEmit) => {
   const expr = computeEngine.parse(value); // parse the input value into a expression
   console.log("expression", expr); // print the expression to the console
 
-  const solution = expr.N(); // get a numerical value from the expression
+  const solution = expr.N().toString(); // get a numerical value from the expression
   computedValue.value = solution;
 };
 </script>

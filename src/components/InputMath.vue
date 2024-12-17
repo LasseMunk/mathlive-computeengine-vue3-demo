@@ -2,19 +2,7 @@
 import "mathlive";
 import { MathfieldElement } from "mathlive";
 import { onMounted, ref, watch } from "vue";
-
-export type InputMathFieldProps = {
-  id: string;
-  value: string | undefined;
-  disabled?: boolean;
-  readOnly?: boolean;
-  autoFocus?: boolean;
-};
-
-export type InputMathFieldEmit = {
-  id: string;
-  value: string;
-};
+import { InputMathFieldEmit, InputMathFieldProps } from "./input-math-types";
 
 const { value, disabled = false, id, readOnly = false, autoFocus } = defineProps<InputMathFieldProps>();
 
