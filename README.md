@@ -1,5 +1,9 @@
 # Mathlive + ComputeEngine + Vue3 composition API (script setup lang="ts")
 
+live demo:
+
+https://mathlive-computeengine-vue3-demo.netlify.app/
+
 https://cortexjs.io/mathlive/
 
 https://cortexjs.io/compute-engine/
