@@ -1,24 +1,26 @@
 {
-	"name": "mathlive-computeengine-vue3-demo",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"scripts": {
-		"start": "vite",
-		"build": "vue-tsc -b && vite build",
-		"preview": "vite preview"
-	},
-	"dependencies": {
-		"@cortex-js/compute-engine": "^0.27.0",
-		"mathlive": "^0.103.0",
-		"prettier": "^3.4.2",
-		"vue": "^3.5.13",
-		"vue-router": "^4.5.0"
-	},
-	"devDependencies": {
-		"@vitejs/plugin-vue": "^5.2.1",
-		"typescript": "~5.6.2",
-		"vite": "^6.0.1",
-		"vue-tsc": "^2.1.10"
-	}
+  "name": "mathlive-computeengine-vue3-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "deploy": "gh-pages -d dist",
+    "start": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@cortex-js/compute-engine": "^0.27.0",
+    "gh-pages": "^6.2.0",
+    "mathlive": "^0.103.0",
+    "prettier": "^3.4.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1",
+    "vue-tsc": "^2.1.10"
+  }
 }
